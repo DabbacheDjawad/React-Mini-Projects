@@ -1,0 +1,50 @@
+form{
+    text-align: center;
+    margin-top: 50px;
+}
+
+form input{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+form button{
+    padding: 12px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(13, 226, 13);
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    background: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.data ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.07); /* Black overlay with 50% opacity */
+    pointer-events: none; /* Allows clicking through the overlay if needed */
+    z-index: -1; /* Puts the overlay behind the text */
+}
